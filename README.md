@@ -90,7 +90,7 @@ For more information on inaccuracies, see issue
      before—called `EXCLUDED`.
    - To ignore certain languages, add them (separated by commas) to a new
      secret called `EXCLUDED_LANGS`. For example, to exclude HTML and TeX you
-     could set the value to `html,tex`.
+     could set the value to `html,tex`. Use the exact name from the [`linguist/languages.yml`](https://github.com/github/linguist/blob/1f65799270b46a0bd1d4a62ea5734a1117f45e61/lib/linguist/languages.yml) and note that casing doesn't matter
    - To show statistics only for "owned" repositories and not forks with
      contributions, add an environment variable (under the `env` header in the
      [main
