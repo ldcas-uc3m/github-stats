@@ -48,7 +48,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EXCLUDED: "rajayonin/dotfiles,rajayonin/cpp-coroutines,rajayonin/linux-now-what,ldcas-uc3m/CG-Exercise2,ldcas-uc3m/RTS-Project2"
+        EXCLUDED: "rajayonin/dotfiles,rajayonin/cpp-coroutines,rajayonin/linux-now-what,ldcas-uc3m/CG-Exercise2,ldcas-uc3m/RTS-Project2,ldcas-uc3m/UI-Exercise1"
         EXCLUDED_LANGS: "jupyter notebook,html,css"
         EXCLUDE_FORKED_REPOS: true
 
