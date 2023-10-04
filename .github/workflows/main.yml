@@ -48,8 +48,8 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EXCLUDED: ${{ secrets.EXCLUDED }}
-        EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
+        EXCLUDED: "rajayonin/dotfiles,rajayonin/cpp-coroutines,rajayonin/linux-now-what,ldcas-uc3m/CG-Exercise2,ldcas-uc3m/RTS-Project2"
+        EXCLUDED_LANGS: "jupyter notebooks"
         EXCLUDE_FORKED_REPOS: true
 
     # Commit all changed files to the repository
