@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "5 0 * * *"
+    - cron: "5 0 * * MON"
   workflow_dispatch:
 
 permissions:
@@ -40,8 +40,8 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EXCLUDED: ${{ secrets.EXCLUDED }}
-        EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
+        EXCLUDED: "rajayonin/dotfiles,rajayonin/cpp-coroutines,rajayonin/linux-now-what,ldcas-uc3m/CG-Exercise2,ldcas-uc3m/RTS-Project2,ldcas-uc3m/UI-Exercise2,ldcas-uc3m/VA-PF,ldcas-uc3m/CAP-Labs"
+        EXCLUDED_LANGS: "jupyter notebook,html,css"
         EXCLUDE_FORKED_REPOS: true
 
     # Commit all changed files to the repository
