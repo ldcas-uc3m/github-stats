@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: "5 0 * * *"
+    - cron: "5 0 * * MON"
   workflow_dispatch:
 
 permissions:
@@ -42,8 +42,8 @@ jobs:
         ./zig-out/bin/github-stats
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
-        EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS }}
+        EXCLUDE_REPOS: "rajayonin/*,ldcas-uc3m/CG-Exercise2,ldcas-uc3m/RTS-Project2,ldcas-uc3m/UI-Exercise2,ldcas-uc3m/VA-PF,ldcas-uc3m/CAP-Labs"
+        EXCLUDE_LANGS: "Jupyter Notebook,html,css"
         EXCLUDE_PRIVATE: "false"
         SILENT: "true"
         # TODO: Remove this when they get their API working again
